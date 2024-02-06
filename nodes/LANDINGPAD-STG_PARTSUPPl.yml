@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 01141679-9d0e-47df-88b2-a64cf73dd4e6
-name: STG_PARTSUPP
+name: STG_PARTSUPPl
 operation:
   config:
     insertStrategy: INSERT
@@ -98,9 +98,9 @@ operation:
             nodeName: PARTSUPP
         join:
           joinCondition: FROM {{ ref('SRC', 'PARTSUPP') }} "PARTSUPP"
-        name: STG_PARTSUPP
+        name: STG_PARTSUPPl
         noLinkRefs: []
-  name: STG_PARTSUPP
+  name: STG_PARTSUPPl
   overrideSQL: false
   schema: ""
   sqlType: Stage

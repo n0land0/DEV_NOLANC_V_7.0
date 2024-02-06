@@ -11,7 +11,7 @@ steps:
       deployEnabled: true
       description: ""
       isMultisource: false
-      locationName: SRC
+      locationName: LANDINGPAD
       materializationType: table
       metadata:
         appliedNodeTests: []

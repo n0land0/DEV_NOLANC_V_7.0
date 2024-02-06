@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "36"
+mappingDefinitions:
+  LANDINGPAD:
+    database: NOLAN_DB
+    schema: STAGE_QA
+  SRC:
+    database: COALESCE_SAMPLE_DATABASE
+    schema: TPCH_SF001
+name: New Environment
+type: Environment

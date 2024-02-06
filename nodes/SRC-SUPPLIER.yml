@@ -1,0 +1,125 @@
+fileVersion: 1
+id: 83749a8b-5ba1-41e7-a9ba-fa90ff03422e
+name: SUPPLIER
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f69afcdf-8db4-4c0a-8c6e-ef36df9b612e
+          stepCounter: 83749a8b-5ba1-41e7-a9ba-fa90ff03422e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: SF*10,000 are populated
+        name: S_SUPPKEY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a433f47-6056-49d9-b172-a594ca5a0c79
+          stepCounter: 83749a8b-5ba1-41e7-a9ba-fa90ff03422e
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: S_NAME
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9415e133-a6c1-47b4-9ad0-57fb21adb764
+          stepCounter: 83749a8b-5ba1-41e7-a9ba-fa90ff03422e
+        config: {}
+        dataType: VARCHAR(40)
+        defaultValue: ""
+        description: ""
+        name: S_ADDRESS
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0b43fa7-c3fa-4574-adc8-51b7e187e78f
+          stepCounter: 83749a8b-5ba1-41e7-a9ba-fa90ff03422e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Foreign Key to N_NATIONKEY
+        name: S_NATIONKEY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe740d57-d3a1-4682-a0af-6dbbfee5a4ad
+          stepCounter: 83749a8b-5ba1-41e7-a9ba-fa90ff03422e
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        name: S_PHONE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b41a267-81bb-4edb-91af-80e57b9da029
+          stepCounter: 83749a8b-5ba1-41e7-a9ba-fa90ff03422e
+        config: {}
+        dataType: NUMBER(12,2)
+        defaultValue: ""
+        description: ""
+        name: S_ACCTBAL
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 912bc0ba-17f4-4986-a2c6-01cbbe5ccbc9
+          stepCounter: 83749a8b-5ba1-41e7-a9ba-fa90ff03422e
+        config: {}
+        dataType: VARCHAR(101)
+        defaultValue: ""
+        description: ""
+        name: S_COMMENT
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'SUPPLIER') }}
+  name: SUPPLIER
+  schema: ""
+  sqlType: Source
+  table: SUPPLIER
+  type: sourceInput
+  version: 1
+type: Node
